@@ -1,0 +1,1495 @@
+--------- beginning of main
+01-12 10:42:32.464  2991  3023 D InitAlarmsService: Clearing and rescheduling alarms.
+01-12 10:42:38.527   692  1822 I AudioPolicyManagerCustom: FLAG None hence request for a primary output
+01-12 10:42:38.529   692  1821 I AudioPolicyManagerCustom: FLAG None hence request for a primary output
+01-12 10:42:38.530  3419  3419 E WVMExtractor: Failed to open libwvm.so: dlopen failed: library "libwvm.so" not found
+01-12 10:42:38.532   692  1318 D audio_hw_primary: out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+01-12 10:42:38.532   692  1318 D audio_hw_extn: audio_extn_set_anc_parameters: anc_enabled:0
+01-12 10:42:38.532   692  1318 D audio_hw_spkr_prot: audio_extn_fbsp_set_parameters: Speaker protection disabled
+01-12 10:42:38.534   692  1318 D audio_hw_primary: start_output_stream: enter: stream(0xef4f8400)usecase(1: low-latency-playback) devices(0x2)
+01-12 10:42:38.535   692  1318 D audio_hw_primary: select_devices for use case (low-latency-playback)
+01-12 10:42:38.535   692  1318 D audio_hw_primary: select_devices: out_snd_device(2: speaker) in_snd_device(0: )
+01-12 10:42:38.535   452  2595 E ANDR-PERF-RESOURCEQS: Failed to apply optimization [4, 0]
+01-12 10:42:38.535   692  1318 I msm8974_platform: platform_check_and_set_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+01-12 10:42:38.535   692  1318 D msm8974_platform: platform_can_split_snd_device: snd_device(2) num devices(1) new_snd_devices(0)
+01-12 10:42:38.535   692  1318 I msm8974_platform: platform_check_and_set_codec_backend_cfg: new_snd_devices[0] is 2
+01-12 10:42:38.535   692  1318 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: bitwidth 16, samplerate 48000 channels 2, backend_idx 0 usecase = 1 device (speaker)
+01-12 10:42:38.535   692  1318 D msm8974_platform: platform_check_codec_backend_cfg:becf: afe: playback on non-44.1-support device Configure afe to default Sample Rate(48k)
+01-12 10:42:38.535   692  1318 I msm8974_platform: platform_check_codec_backend_cfg:becf: afe: Codec selected backend: 0 updated bit width: 16 and sample rate: 48000
+01-12 10:42:38.535   692  1318 D audio_hw_primary: check_usecases_codec_backend:becf: force routing 0
+01-12 10:42:38.535   692  1318 E msm8974_platform: platform_check_backends_match: Invalid snd_device = 
+01-12 10:42:38.535   692  1318 D audio_hw_primary: check_usecases_codec_backend:becf: (40) check_usecases curr device: speaker, usecase device: backends match 0
+01-12 10:42:38.535   692  1318 D audio_hw_primary: check_usecases_codec_backend:becf: check_usecases num.of Usecases to switch 0
+01-12 10:42:38.536   692  1318 D hardware_info: hw_info_append_hw_type : device_name = speaker
+01-12 10:42:38.536   692  1318 D msm8974_platform: platform_can_split_snd_device: snd_device(2) num devices(0) new_snd_devices(0)
+01-12 10:42:38.536   692  1318 D audio_hw_primary: enable_snd_device: snd_device(2: speaker)
+01-12 10:42:38.536   692  1318 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 1, with Raise=0
+01-12 10:42:38.536   692  1318 D aud_dev_arbi: acquireOneDevice: device owner for device 2 is 1
+01-12 10:42:38.536   692  1318 I audio_hw_primary: select_devices Selected apptype: 69937
+01-12 10:42:38.536   692  1318 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_id 1 of type 0 for Event 3, with Raise=0
+01-12 10:42:38.536   692  1318 I audio_hw_utils: audio_extn_utils_send_app_type_cfg PLAYBACK app_type 69937, acdb_dev_id 14, sample_rate 48000
+01-12 10:42:38.537   692  1318 I audio_hw_utils: audio_extn_utils_send_app_type_cfg:becf: adm: app_type 69936, acdb_dev_id 14, sample_rate 48000
+01-12 10:42:38.537   692  1318 D msm8974_platform: platform_can_split_snd_device: snd_device(2) num devices(1) new_snd_devices(-290004703)
+01-12 10:42:38.537   692  1318 D ACDB-LOADER: ACDB -> send_audio_cal, acdb_id = 14, path = 0, app id = 0x11131, sample rate = 48000
+01-12 10:42:38.537   692  1318 D ACDB-LOADER: ACDB -> send_asm_topology
+01-12 10:42:38.537   692  1318 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+01-12 10:42:38.537   692  1318 D ACDB-LOADER: ACDB -> send_adm_topology
+01-12 10:42:38.538   692  1318 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+01-12 10:42:38.538   692  1318 D ACDB-LOADER: ACDB -> send_audtable
+01-12 10:42:38.538   692  1318 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE_SIZE
+01-12 10:42:38.538   692  1318 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+01-12 10:42:38.538   692  1318 D ACDB-LOADER: ACDB -> AUDIO_SET_AUDPROC_CAL
+01-12 10:42:38.538   692  1318 D ACDB-LOADER: ACDB -> send_audvoltable
+01-12 10:42:38.538   692  1318 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_STEP_TABLE, vol index 0
+01-12 10:42:38.538   692  1318 D ACDB-LOADER: ACDB -> AUDIO_SET_VOL_CAL cal type = 12
+01-12 10:42:38.538   692  1318 D ACDB-LOADER: ACDB -> send_audstrmtable
+01-12 10:42:38.538   692  1318 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TABLE_V2
+01-12 10:42:38.538   692  1318 D ACDB-LOADER: ACDB -> audstrm_cal->cal_type.cal_data.cal_size = 16
+01-12 10:42:38.538   692  1318 D ACDB-LOADER: ACDB -> send_afe_topology
+01-12 10:42:38.538   692  1318 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_TOPOLOGY_ID
+01-12 10:42:38.538   692  1318 D ACDB-LOADER: ACDB -> GET_AFE_TOPOLOGY_ID for adcd_id 14, Topology Id 112fc
+01-12 10:42:38.538   692  1318 D ACDB-LOADER: ACDB -> send_afe_cal
+01-12 10:42:38.538   692  1318 D ACDB-LOADER: ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+01-12 10:42:38.538   692  1318 D         : Failed to fetch the lookup information of the device 0000000E 
+01-12 10:42:38.538   692  1318 E ACDB-LOADER: Error: ACDB AFE returned = -19
+01-12 10:42:38.538   692  1318 D ACDB-LOADER: ACDB -> AUDIO_SET_AFE_CAL
+01-12 10:42:38.538   692  1318 D ACDB-LOADER: ACDB -> send_hw_delay : acdb_id = 14 path = 0
+01-12 10:42:38.538   692  1318 D ACDB-LOADER: ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+01-12 10:42:38.538   692  1318 D audio_hw_primary: enable_audio_route: apply mixer and update path: low-latency-playback smartpa
+01-12 10:42:38.541   692  1318 D audio_hw_primary: select_devices: done
+01-12 10:42:38.554   703  1925 V MPEG4Extractor: saw chunk type ftyp, size 32 @ 0
+01-12 10:42:38.554   703  1925 V MPEG4Extractor: saw chunk type free, size 8 @ 32
+01-12 10:42:38.554   703  1925 V MPEG4Extractor: saw chunk type mdat, size 12647900 @ 40
+01-12 10:42:38.572   692  1318 D msm8974_platform: platform_set_channel_map mixer_ctl_name:Playback Channel Map15
+01-12 10:42:38.572   692  1318 D msm8974_platform: platform_set_channel_map: set mapping(1 2 0 0 0 0 0 0) for channel:2
+01-12 10:42:38.577   703  1925 I ExtendedExtractor: QTIParser is prefered
+01-12 10:42:38.577   703  1925 I ExtendedExtractor: ExtendedExtractor::create 0xeb587280
+01-12 10:42:38.601   692  1318 D audio_hw_primary: start_output_stream: exit
+01-12 10:42:38.602  3419  3419 W VideoCapabilities: Unrecognized profile 2130706433 for video/avc
+01-12 10:42:38.602  3419  3419 W VideoCapabilities: Unrecognized profile 2130706434 for video/avc
+01-12 10:42:38.615  3419  3419 V ACodec  : Now uninitialized
+01-12 10:42:38.616  3419  3870 V ACodec  : onAllocateComponent
+01-12 10:42:38.617   706   706 I MediaPlayerService: MediaPlayerService::getOMX
+01-12 10:42:38.619  3419  3870 I OMXClient: MuxOMX ctor
+01-12 10:42:38.620   701  2337 I OMXMaster: makeComponentInstance(OMX.qcom.video.decoder.avc) in mediacodec process
+01-12 10:42:38.628   701  2337 E         : Service not available yet
+01-12 10:42:38.632   701  2337 I OMX-VDEC-1080P: Video slvp perflock acquired
+01-12 10:42:38.633   701  2337 I OMX-VDEC-1080P: component_init: OMX.qcom.video.decoder.avc : fd=9
+01-12 10:42:38.652   701  2337 I OMX-VDEC-1080P: omx_vdec::component_init() success : fd=9
+01-12 10:42:38.652  3419  3870 V OMXClient: allocated node_id 2bd003a on codecprocess OMX
+01-12 10:42:38.652  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] Now Loaded
+01-12 10:42:38.655  3419  3419 I @@@@    : using codec: OMX.qcom.video.decoder.avc
+01-12 10:42:38.655  3419  3869 V MediaCodec: Found 2 pieces of codec specific data.
+01-12 10:42:38.656  3419  3870 V ACodec  : onConfigureComponent
+01-12 10:42:38.656  3419  3870 I ExtendedACodec: setupVideoDecoder()
+01-12 10:42:38.656  3419  3870 I ExtendedACodec: vpp-enable search is 0 and value is 0
+01-12 10:42:38.657   701  1957 E OMX-VDEC-1080P: Extension: OMX.google.android.index.storeANWBufferInMetadata not implemented
+01-12 10:42:38.657   701  1957 E OMX-VDEC-1080P: Extension: OMX.google.android.index.configureVideoTunnelMode not implemented
+01-12 10:42:38.657   701  1957 E OMX-VDEC-1080P: Extension: OMX.google.android.index.useAndroidNativeBuffer is supported
+01-12 10:42:38.675   701   862 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:38.708   701  2372 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:38.708   701  2372 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:38.709   701  2337 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:38.710  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] setting color aspects (R:0(Unspecified), P:0(Unspecified), M:0(Unspecified), T:0(Unspecified)) err=0(NO_ERROR)
+01-12 10:42:38.711   701   862 E OMX-VDEC-1080P: Extension: OMX.google.android.index.describeHDRStaticInfo not implemented
+01-12 10:42:38.711  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] setting  HDRStaticInfo (R: 0 0, G: 0 0, B: 0, 0, W: 0, 0, MaxDispL: 0, MinDispL: 0, MaxContentL: 0, MaxFrameAvgL: 0)
+01-12 10:42:38.711  3419  3870 I ExtendedACodec: Decoder will be in frame by frame mode
+01-12 10:42:38.714  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] input format is AMessage(what = 0x00000000) = {
+01-12 10:42:38.714  3419  3870 V ACodec  :   int32_t adaptive-playback = 0
+01-12 10:42:38.714  3419  3870 V ACodec  :   string mime = "video/avc"
+01-12 10:42:38.714  3419  3870 V ACodec  :   int32_t width = 1920
+01-12 10:42:38.714  3419  3870 V ACodec  :   int32_t height = 1080
+01-12 10:42:38.714  3419  3870 V ACodec  : }
+01-12 10:42:38.729   701  2372 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:38.729   701  2372 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:38.742   701  1957 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:38.742   701  1957 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:38.744   701   862 E OMXNodeInstance: getParameter(2bd003a:qcom.decoder.avc, ??(0x7f000044)) ERROR: UnsupportedSetting(0x80001019)
+01-12 10:42:38.744  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] MediaImage { F(1920x1080) @0+1+1920 @2073600+2+1920 @2073601+2+1920 }
+01-12 10:42:38.745  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] setting color aspects (R:0(Unspecified), P:0(Unspecified), M:0(Unspecified), T:0(Unspecified)) err=0(NO_ERROR)
+01-12 10:42:38.745  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] got color aspects (R:0(Unspecified), P:0(Unspecified), M:0(Unspecified), T:0(Unspecified)) err=0(NO_ERROR)
+01-12 10:42:38.745  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] output format is AMessage(what = 0x00000000) = {
+01-12 10:42:38.745  3419  3870 V ACodec  :   string mime = "video/raw"
+01-12 10:42:38.745  3419  3870 V ACodec  :   int32_t stride = 1920
+01-12 10:42:38.745  3419  3870 V ACodec  :   int32_t slice-height = 1080
+01-12 10:42:38.745  3419  3870 V ACodec  :   int32_t color-format = 21
+01-12 10:42:38.745  3419  3870 V ACodec  :   Buffer *image-data = 0x7f8f81f1e0
+01-12 10:42:38.745  3419  3870 V ACodec  :   Rect crop(0, 0, 1919, 1079)
+01-12 10:42:38.745  3419  3870 V ACodec  :   int32_t width = 1920
+01-12 10:42:38.745  3419  3870 V ACodec  :   int32_t height = 1080
+01-12 10:42:38.745  3419  3870 V ACodec  : }
+01-12 10:42:38.745  3419  3869 V MediaCodec: [OMX.qcom.video.decoder.avc] configured as input format: AMessage(what = 0x00000000) = {
+01-12 10:42:38.745  3419  3869 V MediaCodec:       int32_t adaptive-playback = 0
+01-12 10:42:38.745  3419  3869 V MediaCodec:       string mime = "video/avc"
+01-12 10:42:38.745  3419  3869 V MediaCodec:       int32_t width = 1920
+01-12 10:42:38.745  3419  3869 V MediaCodec:       int32_t height = 1080
+01-12 10:42:38.745  3419  3869 V MediaCodec:     }, output format: AMessage(what = 0x00000000) = {
+01-12 10:42:38.745  3419  3869 V MediaCodec:       string mime = "video/raw"
+01-12 10:42:38.745  3419  3869 V MediaCodec:       int32_t stride = 1920
+01-12 10:42:38.745  3419  3869 V MediaCodec:       int32_t slice-height = 1080
+01-12 10:42:38.745  3419  3869 V MediaCodec:       int32_t color-format = 21
+01-12 10:42:38.745  3419  3869 V MediaCodec:       Buffer *image-data = 0x7f8f81f1e0
+01-12 10:42:38.745  3419  3869 V MediaCodec:       Rect crop(0, 0, 1919, 1079)
+01-12 10:42:38.745  3419  3869 V MediaCodec:       int32_t width = 1920
+01-12 10:42:38.745  3419  3869 V MediaCodec:       int32_t height = 1080
+01-12 10:42:38.745  3419  3869 V MediaCodec:     }
+01-12 10:42:38.748  3419  3870 V ACodec  : onStart
+01-12 10:42:38.748  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] Now Loaded->Idle
+01-12 10:42:38.749  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] Allocating 4 buffers of size 7077888/7077888 (from 7077888 using Invalid) on input port
+01-12 10:42:38.755  3419  3869 V MediaCodec: input buffers allocated
+01-12 10:42:38.769   701   701 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:38.769   701   701 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:38.769  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] Allocating 18 buffers of size 3112960/3112960 (from 3112960 using Invalid) on output port
+01-12 10:42:38.944  3419  3869 V MediaCodec: output buffers allocated
+01-12 10:42:38.945  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] Now Idle->Executing
+01-12 10:42:38.946  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 5
+01-12 10:42:38.947  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 6
+01-12 10:42:38.949  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 7
+01-12 10:42:38.951  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 8
+01-12 10:42:38.951  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 9
+01-12 10:42:38.952  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 10
+01-12 10:42:38.954  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 11
+01-12 10:42:38.955  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 12
+01-12 10:42:38.955  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 13
+01-12 10:42:38.955  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 14
+01-12 10:42:38.955  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 15
+01-12 10:42:38.955  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 16
+01-12 10:42:38.956  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 17
+01-12 10:42:38.956  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 18
+01-12 10:42:38.956  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 19
+01-12 10:42:38.956  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 20
+01-12 10:42:38.956  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 21
+01-12 10:42:38.956  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 22
+01-12 10:42:38.957  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] Now Executing
+01-12 10:42:38.957  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ codec specific data
+01-12 10:42:38.957  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ codec specific data
+01-12 10:42:38.967  3419  3419 I @@@@    : read sample 0:1 @ 66687 size 908132
+01-12 10:42:38.968  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 66687 us
+01-12 10:42:38.975  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:38.980  3419  3419 I @@@@    : read sample 1:0 @ 166687 size 215981
+01-12 10:42:38.980  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 166687 us
+01-12 10:42:38.985  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:38.996  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.009  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.020  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.030  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:39.030  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.031  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:39.032  3419  3419 I @@@@    : read sample 2:0 @ 99687 size 38082
+01-12 10:42:39.038  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.041  3419  3419 I @@@@    : read sample 3:0 @ 133687 size 31307
+01-12 10:42:39.041   701  1957 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.041   701  1957 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.046  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.049   701  2372 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.049   701  2372 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.050   701  2337 E OMXNodeInstance: getParameter(2bd003a:qcom.decoder.avc, ??(0x7f000044)) ERROR: UnsupportedSetting(0x80001019)
+01-12 10:42:39.051  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] MediaImage { F(1920x1080) @0+1+1920 @2073600+2+1920 @2073601+2+1920 }
+01-12 10:42:39.051  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] setting color aspects (R:0(Unspecified), P:0(Unspecified), M:0(Unspecified), T:0(Unspecified)) err=0(NO_ERROR)
+01-12 10:42:39.052  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] got color aspects (R:0(Unspecified), P:0(Unspecified), M:0(Unspecified), T:0(Unspecified)) err=0(NO_ERROR)
+01-12 10:42:39.052  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] output format is AMessage(what = 0x00000000) = {
+01-12 10:42:39.052  3419  3870 V ACodec  :   string mime = "video/raw"
+01-12 10:42:39.052  3419  3870 V ACodec  :   int32_t stride = 1920
+01-12 10:42:39.052  3419  3870 V ACodec  :   int32_t slice-height = 1080
+01-12 10:42:39.052  3419  3870 V ACodec  :   int32_t color-format = 21
+01-12 10:42:39.052  3419  3870 V ACodec  :   Buffer *image-data = 0x7f8f820630
+01-12 10:42:39.052  3419  3870 V ACodec  :   Rect crop(0, 0, 1919, 1079)
+01-12 10:42:39.052  3419  3870 V ACodec  :   int32_t width = 1920
+01-12 10:42:39.052  3419  3870 V ACodec  :   int32_t height = 1080
+01-12 10:42:39.052  3419  3870 V ACodec  : }
+01-12 10:42:39.053  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] Now handling output port settings change
+01-12 10:42:39.054  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 99687 us
+01-12 10:42:39.055  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 133687 us
+01-12 10:42:39.056  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 7 time 0 us, flags = 0x00000000
+01-12 10:42:39.057  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.057  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 8 time 0 us, flags = 0x00000000
+01-12 10:42:39.058  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 9 time 0 us, flags = 0x00000000
+01-12 10:42:39.058  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 10 time 0 us, flags = 0x00000000
+01-12 10:42:39.059  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 11 time 0 us, flags = 0x00000000
+01-12 10:42:39.059  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 12 time 0 us, flags = 0x00000000
+01-12 10:42:39.060  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 13 time 0 us, flags = 0x00000000
+01-12 10:42:39.061  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 14 time 0 us, flags = 0x00000000
+01-12 10:42:39.061  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 15 time 0 us, flags = 0x00000000
+01-12 10:42:39.062  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 16 time 0 us, flags = 0x00000000
+01-12 10:42:39.062  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 17 time 0 us, flags = 0x00000000
+01-12 10:42:39.063  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 18 time 0 us, flags = 0x00000000
+01-12 10:42:39.063  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 19 time 0 us, flags = 0x00000000
+01-12 10:42:39.064  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 20 time 0 us, flags = 0x00000000
+01-12 10:42:39.064  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 21 time 0 us, flags = 0x00000000
+01-12 10:42:39.065  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 22 time 0 us, flags = 0x00000000
+01-12 10:42:39.066  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 5 time 0 us, flags = 0x00000000
+01-12 10:42:39.067  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 6 time 0 us, flags = 0x00000000
+01-12 10:42:39.068  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.076  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] Output port now disabled.
+01-12 10:42:39.079  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.081   701  1957 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.081   701  1957 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.081  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] Allocating 6 buffers of size 3133440/3133440 (from 3133440 using Invalid) on output port
+01-12 10:42:39.090  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.102  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.112  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.123  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.133  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] Output port now reenabled.
+01-12 10:42:39.134  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:39.134  3419  3869 V MediaCodec: output buffers allocated
+01-12 10:42:39.134  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:39.134  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:39.135  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:39.135  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.135  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:39.136  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:39.137  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] Now Executing
+01-12 10:42:39.151  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.157  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:39.162  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.164  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:39.164  3419  3419 I @@@@    : read sample 4:0 @ 299687 size 249106
+01-12 10:42:39.165  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 299687 us
+01-12 10:42:39.167  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:39.170  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.172  3419  3419 I @@@@    : read sample 5:0 @ 233687 size 54071
+01-12 10:42:39.172  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 233687 us
+01-12 10:42:39.181  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.184  3419  3419 I @@@@    : read sample 6:0 @ 199687 size 33518
+01-12 10:42:39.184  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 199687 us
+01-12 10:42:39.189   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.190  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.198   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.201  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.212  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.215   701  1957 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.215   701  1957 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.223  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.226   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.230   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.234  3419  3419 D MainActivity: no output frame available yet
+01-12 10:42:39.238   701  2337 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.238   701  2337 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.240   701  2337 E OMXNodeInstance: getParameter(2bd003a:qcom.decoder.avc, ??(0x7f000044)) ERROR: UnsupportedSetting(0x80001019)
+01-12 10:42:39.240  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] MediaImage { F(1920x1088) @0+1+1920 @2088960+2+1920 @2088961+2+1920 }
+01-12 10:42:39.242  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] setting color aspects (R:0(Unspecified), P:0(Unspecified), M:0(Unspecified), T:0(Unspecified)) err=0(NO_ERROR)
+01-12 10:42:39.243  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] got color aspects (R:0(Unspecified), P:0(Unspecified), M:0(Unspecified), T:0(Unspecified)) err=0(NO_ERROR)
+01-12 10:42:39.243  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] output format is AMessage(what = 0x00000000) = {
+01-12 10:42:39.243  3419  3870 V ACodec  :   string mime = "video/raw"
+01-12 10:42:39.243  3419  3870 V ACodec  :   int32_t stride = 1920
+01-12 10:42:39.243  3419  3870 V ACodec  :   int32_t slice-height = 1088
+01-12 10:42:39.243  3419  3870 V ACodec  :   int32_t color-format = 21
+01-12 10:42:39.243  3419  3870 V ACodec  :   Buffer *image-data = 0x7f8f820630
+01-12 10:42:39.243  3419  3870 V ACodec  :   Rect crop(0, 0, 1919, 1079)
+01-12 10:42:39.243  3419  3870 V ACodec  :   int32_t width = 1920
+01-12 10:42:39.243  3419  3870 V ACodec  :   int32_t height = 1088
+01-12 10:42:39.243  3419  3870 V ACodec  : }
+01-12 10:42:39.243  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 66687 us, flags = 0x00000000
+01-12 10:42:39.244  3419  3869 V MediaCodec: [OMX.qcom.video.decoder.avc] output format changed to: AMessage(what = 0x00000000) = {
+01-12 10:42:39.244  3419  3869 V MediaCodec:       string mime = "video/raw"
+01-12 10:42:39.244  3419  3869 V MediaCodec:       int32_t stride = 1920
+01-12 10:42:39.244  3419  3869 V MediaCodec:       int32_t slice-height = 1088
+01-12 10:42:39.244  3419  3869 V MediaCodec:       int32_t color-format = 21
+01-12 10:42:39.244  3419  3869 V MediaCodec:       Buffer *image-data = 0x7f8f820630
+01-12 10:42:39.244  3419  3869 V MediaCodec:       Rect crop(0, 0, 1919, 1079)
+01-12 10:42:39.244  3419  3869 V MediaCodec:       int32_t width = 1920
+01-12 10:42:39.244  3419  3869 V MediaCodec:       int32_t height = 1088
+01-12 10:42:39.244  3419  3869 V MediaCodec:     }
+01-12 10:42:39.244  3419  3419 D MainActivity: output fmt: 21 dim 1920x1088
+01-12 10:42:39.248  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 99687 us, flags = 0x00000000
+01-12 10:42:39.250  3419  3419 D MainActivity: got frame, size 3133440/66687/1/0
+01-12 10:42:39.257  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 133687 us, flags = 0x00000000
+01-12 10:42:39.257  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:39.257  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:39.257  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:39.278  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_1.yuv
+01-12 10:42:39.298  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:39.300  3419  3419 I @@@@    : read sample 7:0 @ 266687 size 30104
+01-12 10:42:39.300  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 266687 us
+01-12 10:42:39.300  3419  3419 D MainActivity: got frame, size 3133440/99687/2/0
+01-12 10:42:39.321  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_2.yuv
+01-12 10:42:39.327   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.335  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 166687 us, flags = 0x00000000
+01-12 10:42:39.335  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:39.338  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:39.340  3419  3419 I @@@@    : read sample 8:0 @ 399687 size 222503
+01-12 10:42:39.340  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 399687 us
+01-12 10:42:39.341  3419  3419 D MainActivity: got frame, size 3133440/133687/3/0
+01-12 10:42:39.351  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:39.355   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.356  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 199687 us, flags = 0x00000000
+01-12 10:42:39.357  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_3.yuv
+01-12 10:42:39.373  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:39.375  3419  3419 I @@@@    : read sample 9:0 @ 333687 size 38536
+01-12 10:42:39.375  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 333687 us
+01-12 10:42:39.375  3419  3419 D MainActivity: got frame, size 3133440/166687/4/0
+01-12 10:42:39.391  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_4.yuv
+01-12 10:42:39.408  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:39.409  3419  3419 I @@@@    : read sample 10:0 @ 366687 size 29179
+01-12 10:42:39.410  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 366687 us
+01-12 10:42:39.410  3419  3419 D MainActivity: got frame, size 3133440/199687/5/0
+01-12 10:42:39.418  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:39.424  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_5.yuv
+01-12 10:42:39.426   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.436  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 233687 us, flags = 0x00000000
+01-12 10:42:39.437   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.439  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 266687 us, flags = 0x00000000
+01-12 10:42:39.440  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:39.443  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:39.447  3419  3419 I @@@@    : read sample 11:0 @ 499687 size 227475
+01-12 10:42:39.447  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 499687 us
+01-12 10:42:39.449  3419  3419 D MainActivity: got frame, size 3133440/233687/6/0
+01-12 10:42:39.458  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:39.460   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.467  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_6.yuv
+01-12 10:42:39.468  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 299687 us, flags = 0x00000000
+01-12 10:42:39.484  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:39.485  3419  3419 I @@@@    : read sample 12:0 @ 433687 size 36675
+01-12 10:42:39.485  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 433687 us
+01-12 10:42:39.485  3419  3419 D MainActivity: got frame, size 3133440/266687/7/0
+01-12 10:42:39.501  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_7.yuv
+01-12 10:42:39.520  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:39.521  3419  3419 I @@@@    : read sample 13:0 @ 466687 size 29043
+01-12 10:42:39.521  3419  3419 D MainActivity: got frame, size 3133440/299687/8/0
+01-12 10:42:39.523  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 466687 us
+01-12 10:42:39.529  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:39.533   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.536  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 333687 us, flags = 0x00000000
+01-12 10:42:39.537   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.539  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 366687 us, flags = 0x00000000
+01-12 10:42:39.542  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_8.yuv
+01-12 10:42:39.550  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:39.558  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:39.560  3419  3419 I @@@@    : read sample 14:0 @ 633687 size 239505
+01-12 10:42:39.560  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 633687 us
+01-12 10:42:39.563  3419  3419 D MainActivity: got frame, size 3133440/333687/9/0
+01-12 10:42:39.575   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.577  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 399687 us, flags = 0x00000000
+01-12 10:42:39.577  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:39.577  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_9.yuv
+01-12 10:42:39.594  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:39.595  3419  3419 I @@@@    : read sample 15:0 @ 566687 size 51258
+01-12 10:42:39.596  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 566687 us
+01-12 10:42:39.596  3419  3419 D MainActivity: got frame, size 3133440/366687/10/0
+01-12 10:42:39.614  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_10.yuv
+01-12 10:42:39.631  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:39.632  3419  3419 I @@@@    : read sample 16:0 @ 533687 size 31188
+01-12 10:42:39.632  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 533687 us
+01-12 10:42:39.632  3419  3419 D MainActivity: got frame, size 3133440/399687/11/0
+01-12 10:42:39.641  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:39.646   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.648  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 433687 us, flags = 0x00000000
+01-12 10:42:39.649  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_11.yuv
+01-12 10:42:39.649   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.651  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 466687 us, flags = 0x00000000
+01-12 10:42:39.662  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:39.667  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:39.668  3419  3419 I @@@@    : read sample 17:0 @ 599687 size 28337
+01-12 10:42:39.668  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 599687 us
+01-12 10:42:39.668  3419  3419 D MainActivity: got frame, size 3133440/433687/12/0
+01-12 10:42:39.683  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_12.yuv
+01-12 10:42:39.689  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:39.692   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.693  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 499687 us, flags = 0x00000000
+01-12 10:42:39.701  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:39.703  3419  3419 I @@@@    : read sample 18:0 @ 733687 size 213862
+01-12 10:42:39.704  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 733687 us
+01-12 10:42:39.704  3419  3419 D MainActivity: got frame, size 3133440/466687/13/0
+01-12 10:42:39.718  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_13.yuv
+01-12 10:42:39.719   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.720  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 533687 us, flags = 0x00000000
+01-12 10:42:39.720  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:39.736  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:39.737  3419  3419 I @@@@    : read sample 19:0 @ 666687 size 37184
+01-12 10:42:39.738  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 666687 us
+01-12 10:42:39.738  3419  3419 D MainActivity: got frame, size 3133440/499687/14/0
+01-12 10:42:39.751  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_14.yuv
+01-12 10:42:39.768  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:39.769  3419  3419 I @@@@    : read sample 20:0 @ 699687 size 28751
+01-12 10:42:39.769  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 699687 us
+01-12 10:42:39.769  3419  3419 D MainActivity: got frame, size 3133440/533687/15/0
+01-12 10:42:39.787  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_15.yuv
+01-12 10:42:39.787   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.790  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 566687 us, flags = 0x00000000
+01-12 10:42:39.791   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.795  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 599687 us, flags = 0x00000000
+01-12 10:42:39.795  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:39.802  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:39.809  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:39.813  3419  3419 I @@@@    : read sample 21:0 @ 866687 size 227244
+01-12 10:42:39.813  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 866687 us
+01-12 10:42:39.814  3419  3419 D MainActivity: got frame, size 3133440/566687/16/0
+01-12 10:42:39.824  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:39.827   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.829  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 633687 us, flags = 0x00000000
+01-12 10:42:39.832  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_16.yuv
+01-12 10:42:39.849  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:39.851  3419  3419 I @@@@    : read sample 22:0 @ 799687 size 50057
+01-12 10:42:39.851  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 799687 us
+01-12 10:42:39.852  3419  3419 D MainActivity: got frame, size 3133440/599687/17/0
+01-12 10:42:39.868  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_17.yuv
+01-12 10:42:39.888  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:39.890  3419  3419 I @@@@    : read sample 23:0 @ 766687 size 30178
+01-12 10:42:39.891  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 766687 us
+01-12 10:42:39.891  3419  3419 D MainActivity: got frame, size 3133440/633687/18/0
+01-12 10:42:39.903   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.906  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_18.yuv
+01-12 10:42:39.907  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 666687 us, flags = 0x00000000
+01-12 10:42:39.910   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.912  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 699687 us, flags = 0x00000000
+01-12 10:42:39.912  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:39.917  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:39.923  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:39.924  3419  3419 I @@@@    : read sample 24:0 @ 833687 size 27764
+01-12 10:42:39.924  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 833687 us
+01-12 10:42:39.925  3419  3419 D MainActivity: got frame, size 3133440/666687/19/0
+01-12 10:42:39.938  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_19.yuv
+01-12 10:42:39.949   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.950  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 733687 us, flags = 0x00000000
+01-12 10:42:39.950  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:39.956  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:39.957  3419  3419 I @@@@    : read sample 25:0 @ 999687 size 221514
+01-12 10:42:39.958  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 999687 us
+01-12 10:42:39.958  3419  3419 D MainActivity: got frame, size 3133440/699687/20/0
+01-12 10:42:39.973  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_20.yuv
+01-12 10:42:39.976   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:39.978  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 766687 us, flags = 0x00000000
+01-12 10:42:39.978  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:39.990  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:39.992  3419  3419 I @@@@    : read sample 26:0 @ 933687 size 49389
+01-12 10:42:39.992  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 933687 us
+01-12 10:42:39.992  3419  3419 D MainActivity: got frame, size 3133440/733687/21/0
+01-12 10:42:40.006  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_21.yuv
+01-12 10:42:40.024  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:40.026  3419  3419 I @@@@    : read sample 27:0 @ 899687 size 30259
+01-12 10:42:40.027  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 899687 us
+01-12 10:42:40.028  3419  3419 D MainActivity: got frame, size 3133440/766687/22/0
+01-12 10:42:40.045  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_22.yuv
+01-12 10:42:40.050   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.052  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 799687 us, flags = 0x00000000
+01-12 10:42:40.055   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.056  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 833687 us, flags = 0x00000000
+01-12 10:42:40.056  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:40.057  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:40.064  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:40.065  3419  3419 I @@@@    : read sample 28:0 @ 966687 size 27649
+01-12 10:42:40.065  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 966687 us
+01-12 10:42:40.066  3419  3419 D MainActivity: got frame, size 3133440/799687/23/0
+01-12 10:42:40.079  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_23.yuv
+01-12 10:42:40.090   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.092  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 866687 us, flags = 0x00000000
+01-12 10:42:40.092  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:40.096  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:40.100  3419  3419 I @@@@    : read sample 29:0 @ 1099687 size 195415
+01-12 10:42:40.100  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 1099687 us
+01-12 10:42:40.101  3419  3419 D MainActivity: got frame, size 3133440/833687/24/0
+01-12 10:42:40.116   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.116  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_24.yuv
+01-12 10:42:40.118  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 899687 us, flags = 0x00000000
+01-12 10:42:40.118  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:40.137  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:40.138  3419  3419 I @@@@    : read sample 30:0 @ 1033687 size 36831
+01-12 10:42:40.139  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 1033687 us
+01-12 10:42:40.139  3419  3419 D MainActivity: got frame, size 3133440/866687/25/0
+01-12 10:42:40.157  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_25.yuv
+01-12 10:42:40.173  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:40.174  3419  3419 I @@@@    : read sample 31:0 @ 1066687 size 29040
+01-12 10:42:40.174  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 1066687 us
+01-12 10:42:40.174  3419  3419 D MainActivity: got frame, size 3133440/899687/26/0
+01-12 10:42:40.180  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:40.184   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.185  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 933687 us, flags = 0x00000000
+01-12 10:42:40.187   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.189  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 966687 us, flags = 0x00000000
+01-12 10:42:40.191  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_26.yuv
+01-12 10:42:40.200  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:40.211  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:40.212  3419  3419 I @@@@    : read sample 32:0 @ 1199687 size 202235
+01-12 10:42:40.212  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 1199687 us
+01-12 10:42:40.212  3419  3419 D MainActivity: got frame, size 3133440/933687/27/0
+01-12 10:42:40.228   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.228  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_27.yuv
+01-12 10:42:40.229  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 999687 us, flags = 0x00000000
+01-12 10:42:40.229  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:40.246  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:40.247  3419  3419 I @@@@    : read sample 33:0 @ 1133687 size 38690
+01-12 10:42:40.247  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 1133687 us
+01-12 10:42:40.248  3419  3419 D MainActivity: got frame, size 3133440/966687/28/0
+01-12 10:42:40.261  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_28.yuv
+01-12 10:42:40.279  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:40.282  3419  3419 I @@@@    : read sample 34:0 @ 1166687 size 30489
+01-12 10:42:40.282  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 1166687 us
+01-12 10:42:40.285  3419  3419 D MainActivity: got frame, size 3133440/999687/29/0
+01-12 10:42:40.297   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.299  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 1033687 us, flags = 0x00000000
+01-12 10:42:40.299  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_29.yuv
+01-12 10:42:40.301   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.303  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 1066687 us, flags = 0x00000000
+01-12 10:42:40.305  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:40.309  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:40.317  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:40.318  3419  3419 I @@@@    : read sample 35:0 @ 1333687 size 51038
+01-12 10:42:40.320  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 1333687 us
+01-12 10:42:40.320  3419  3419 D MainActivity: got frame, size 3133440/1033687/30/0
+01-12 10:42:40.337  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_30.yuv
+01-12 10:42:40.342   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.344  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 1099687 us, flags = 0x00000000
+01-12 10:42:40.344  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:40.359  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:40.360  3419  3419 I @@@@    : read sample 36:0 @ 1266687 size 34474
+01-12 10:42:40.360  3419  3419 D MainActivity: got frame, size 3133440/1066687/31/0
+01-12 10:42:40.361  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 1266687 us
+01-12 10:42:40.375  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_31.yuv
+01-12 10:42:40.382  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:40.385   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.386  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 1133687 us, flags = 0x00000000
+01-12 10:42:40.388   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.390  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 1166687 us, flags = 0x00000000
+01-12 10:42:40.392  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:40.394  3419  3419 I @@@@    : read sample 37:0 @ 1233687 size 24089
+01-12 10:42:40.394  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 1233687 us
+01-12 10:42:40.394  3419  3419 D MainActivity: got frame, size 3133440/1099687/32/0
+01-12 10:42:40.409  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_32.yuv
+01-12 10:42:40.415  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:40.427  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:40.428  3419  3419 I @@@@    : read sample 38:0 @ 1299687 size 14709
+01-12 10:42:40.428  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 1299687 us
+01-12 10:42:40.429  3419  3419 D MainActivity: got frame, size 3133440/1133687/33/0
+01-12 10:42:40.442  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_33.yuv
+01-12 10:42:40.450  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:40.453   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.454  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 1199687 us, flags = 0x00000000
+01-12 10:42:40.458  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:40.461  3419  3419 I @@@@    : read sample 39:0 @ 1433687 size 55377
+01-12 10:42:40.462  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 1433687 us
+01-12 10:42:40.462  3419  3419 D MainActivity: got frame, size 3133440/1166687/34/0
+01-12 10:42:40.476  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_34.yuv
+01-12 10:42:40.483  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:40.485   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.486  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 1233687 us, flags = 0x00000000
+01-12 10:42:40.493  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:40.494  3419  3419 I @@@@    : read sample 40:0 @ 1366687 size 14598
+01-12 10:42:40.494  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 1366687 us
+01-12 10:42:40.495  3419  3419 D MainActivity: got frame, size 3133440/1199687/35/0
+01-12 10:42:40.512  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_35.yuv
+01-12 10:42:40.519   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.522  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 1266687 us, flags = 0x00000000
+01-12 10:42:40.523   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.525  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 1299687 us, flags = 0x00000000
+01-12 10:42:40.525  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:40.531  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:40.531  3419  3419 I @@@@    : read sample 41:0 @ 1399687 size 12327
+01-12 10:42:40.532  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 1399687 us
+01-12 10:42:40.532  3419  3419 D MainActivity: got frame, size 3133440/1233687/36/0
+01-12 10:42:40.547  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_36.yuv
+01-12 10:42:40.554  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:40.563  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:40.565  3419  3419 I @@@@    : read sample 42:0 @ 1566687 size 101433
+01-12 10:42:40.565  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 1566687 us
+01-12 10:42:40.565  3419  3419 D MainActivity: got frame, size 3133440/1266687/37/0
+01-12 10:42:40.581  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_37.yuv
+01-12 10:42:40.591   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.592  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 1333687 us, flags = 0x00000000
+01-12 10:42:40.592  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:40.599  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:40.600  3419  3419 I @@@@    : read sample 43:0 @ 1499687 size 24613
+01-12 10:42:40.600  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 1499687 us
+01-12 10:42:40.600  3419  3419 D MainActivity: got frame, size 3133440/1299687/38/0
+01-12 10:42:40.614  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_38.yuv
+01-12 10:42:40.628   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.631  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 1366687 us, flags = 0x00000000
+01-12 10:42:40.632  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:40.633  3419  3419 I @@@@    : read sample 44:0 @ 1466687 size 13174
+01-12 10:42:40.633  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 1466687 us
+01-12 10:42:40.633   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.634  3419  3419 D MainActivity: got frame, size 3133440/1333687/39/0
+01-12 10:42:40.637  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 1399687 us, flags = 0x00000000
+01-12 10:42:40.637  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:40.647  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_39.yuv
+01-12 10:42:40.656  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:40.664  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:40.665  3419  3419 I @@@@    : read sample 45:0 @ 1533687 size 14540
+01-12 10:42:40.666  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 1533687 us
+01-12 10:42:40.666  3419  3419 D MainActivity: got frame, size 3133440/1366687/40/0
+01-12 10:42:40.685  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_40.yuv
+01-12 10:42:40.690   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.691  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 1433687 us, flags = 0x00000000
+01-12 10:42:40.691  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:40.705  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:40.707  3419  3419 I @@@@    : read sample 46:0 @ 1699687 size 131607
+01-12 10:42:40.708  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 1699687 us
+01-12 10:42:40.708  3419  3419 D MainActivity: got frame, size 3133440/1399687/41/0
+01-12 10:42:40.718  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:40.722   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.724  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 1466687 us, flags = 0x00000000
+01-12 10:42:40.724  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_41.yuv
+01-12 10:42:40.741  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:40.743  3419  3419 I @@@@    : read sample 47:0 @ 1633687 size 29499
+01-12 10:42:40.743  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 1633687 us
+01-12 10:42:40.744  3419  3419 D MainActivity: got frame, size 3133440/1433687/42/0
+01-12 10:42:40.759  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_42.yuv
+01-12 10:42:40.777   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.778  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 1499687 us, flags = 0x00000000
+01-12 10:42:40.779  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:40.781  3419  3419 I @@@@    : read sample 48:0 @ 1599687 size 16999
+01-12 10:42:40.781  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 1599687 us
+01-12 10:42:40.781   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.782  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 1533687 us, flags = 0x00000000
+01-12 10:42:40.782  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:40.782  3419  3419 D MainActivity: got frame, size 3133440/1466687/43/0
+01-12 10:42:40.798  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_43.yuv
+01-12 10:42:40.803  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:40.814  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:40.815  3419  3419 I @@@@    : read sample 49:0 @ 1666687 size 18216
+01-12 10:42:40.815  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 1666687 us
+01-12 10:42:40.815  3419  3419 D MainActivity: got frame, size 3133440/1499687/44/0
+01-12 10:42:40.830  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_44.yuv
+01-12 10:42:40.836  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:40.841   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.842  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 1566687 us, flags = 0x00000000
+01-12 10:42:40.847  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:40.849  3419  3419 I @@@@    : read sample 50:0 @ 1799687 size 142876
+01-12 10:42:40.850  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 1799687 us
+01-12 10:42:40.850  3419  3419 D MainActivity: got frame, size 3133440/1533687/45/0
+01-12 10:42:40.861  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:40.864   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.866  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 1599687 us, flags = 0x00000000
+01-12 10:42:40.868  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_45.yuv
+01-12 10:42:40.887  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:40.889  3419  3419 I @@@@    : read sample 51:0 @ 1733687 size 25935
+01-12 10:42:40.889  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 1733687 us
+01-12 10:42:40.890  3419  3419 D MainActivity: got frame, size 3133440/1566687/46/0
+01-12 10:42:40.905  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_46.yuv
+01-12 10:42:40.919  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:40.922   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.923  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:40.924  3419  3419 I @@@@    : read sample 52:0 @ 1766687 size 21032
+01-12 10:42:40.924  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 1766687 us
+01-12 10:42:40.924  3419  3419 D MainActivity: got frame, size 3133440/1599687/47/0
+01-12 10:42:40.924  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 1633687 us, flags = 0x00000000
+01-12 10:42:40.929   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.931  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 1666687 us, flags = 0x00000000
+01-12 10:42:40.941  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_47.yuv
+01-12 10:42:40.951  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:40.959  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:40.960  3419  3419 I @@@@    : read sample 53:0 @ 1899687 size 148729
+01-12 10:42:40.960  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 1899687 us
+01-12 10:42:40.960  3419  3419 D MainActivity: got frame, size 3133440/1633687/48/0
+01-12 10:42:40.975   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:40.976  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 1699687 us, flags = 0x00000000
+01-12 10:42:40.976  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:40.976  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_48.yuv
+01-12 10:42:40.993  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:40.994  3419  3419 I @@@@    : read sample 54:0 @ 1833687 size 26691
+01-12 10:42:40.994  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 1833687 us
+01-12 10:42:40.995  3419  3419 D MainActivity: got frame, size 3133440/1666687/49/0
+01-12 10:42:41.010  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_49.yuv
+01-12 10:42:41.029  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:41.031   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.032  3419  3419 I @@@@    : read sample 55:0 @ 1866687 size 21930
+01-12 10:42:41.032  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 1866687 us
+01-12 10:42:41.033  3419  3419 D MainActivity: got frame, size 3133440/1699687/50/0
+01-12 10:42:41.034  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 1733687 us, flags = 0x00000000
+01-12 10:42:41.035   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.039  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 1766687 us, flags = 0x00000000
+01-12 10:42:41.041  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:41.056  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_50.yuv
+01-12 10:42:41.061  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:41.076  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:41.077  3419  3419 I @@@@    : read sample 56:0 @ 1999687 size 153388
+01-12 10:42:41.077  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 1999687 us
+01-12 10:42:41.078  3419  3419 D MainActivity: got frame, size 3133440/1733687/51/0
+01-12 10:42:41.092   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.093  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_51.yuv
+01-12 10:42:41.093  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 1799687 us, flags = 0x00000000
+01-12 10:42:41.093  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:41.110  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:41.111  3419  3419 I @@@@    : read sample 57:0 @ 1933687 size 27397
+01-12 10:42:41.111  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 1933687 us
+01-12 10:42:41.111  3419  3419 D MainActivity: got frame, size 3133440/1766687/52/0
+01-12 10:42:41.126  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_52.yuv
+01-12 10:42:41.144  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:41.144  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:41.146  3419  3419 I @@@@    : read sample 58:0 @ 1966687 size 22586
+01-12 10:42:41.146  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 1966687 us
+01-12 10:42:41.147  3419  3419 D MainActivity: got frame, size 3133440/1799687/53/0
+01-12 10:42:41.148   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.150  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 1833687 us, flags = 0x00000000
+01-12 10:42:41.156   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.157  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 1866687 us, flags = 0x00000000
+01-12 10:42:41.163  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_53.yuv
+01-12 10:42:41.171  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:41.179  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:41.183  3419  3419 I @@@@    : read sample 59:0 @ 2099687 size 157962
+01-12 10:42:41.183  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 2099687 us
+01-12 10:42:41.184  3419  3419 D MainActivity: got frame, size 3133440/1833687/54/0
+01-12 10:42:41.197   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.197  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_54.yuv
+01-12 10:42:41.198  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 1899687 us, flags = 0x00000000
+01-12 10:42:41.198  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:41.214  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:41.216  3419  3419 I @@@@    : read sample 60:0 @ 2033687 size 27977
+01-12 10:42:41.216  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 2033687 us
+01-12 10:42:41.216  3419  3419 D MainActivity: got frame, size 3133440/1866687/55/0
+01-12 10:42:41.233  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_55.yuv
+01-12 10:42:41.250  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:41.252  3419  3419 I @@@@    : read sample 61:0 @ 2066687 size 23012
+01-12 10:42:41.252  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 2066687 us
+01-12 10:42:41.252  3419  3419 D MainActivity: got frame, size 3133440/1899687/56/0
+01-12 10:42:41.253   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.255  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 1933687 us, flags = 0x00000000
+01-12 10:42:41.257   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.258  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 1966687 us, flags = 0x00000000
+01-12 10:42:41.259  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:41.267  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_56.yuv
+01-12 10:42:41.279  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:41.284  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:41.286  3419  3419 I @@@@    : read sample 62:0 @ 2199687 size 194024
+01-12 10:42:41.286  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 2199687 us
+01-12 10:42:41.286  3419  3419 D MainActivity: got frame, size 3133440/1933687/57/0
+01-12 10:42:41.301   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.301  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_57.yuv
+01-12 10:42:41.302  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 1999687 us, flags = 0x00000000
+01-12 10:42:41.302  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:41.320  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:41.322  3419  3419 I @@@@    : read sample 63:0 @ 2133687 size 32723
+01-12 10:42:41.322  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 2133687 us
+01-12 10:42:41.326  3419  3419 D MainActivity: got frame, size 3133440/1966687/58/0
+01-12 10:42:41.340  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_58.yuv
+01-12 10:42:41.356  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:41.357  3419  3419 I @@@@    : read sample 64:0 @ 2166687 size 27615
+01-12 10:42:41.358  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:41.358  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 2166687 us
+01-12 10:42:41.359  3419  3419 D MainActivity: got frame, size 3133440/1999687/59/0
+01-12 10:42:41.361   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.363  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 2033687 us, flags = 0x00000000
+01-12 10:42:41.365   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.366  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 2066687 us, flags = 0x00000000
+01-12 10:42:41.373  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_59.yuv
+01-12 10:42:41.379  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:41.389  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:41.392  3419  3419 I @@@@    : read sample 65:0 @ 2299687 size 192647
+01-12 10:42:41.392  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 2299687 us
+01-12 10:42:41.393  3419  3419 D MainActivity: got frame, size 3133440/2033687/60/0
+01-12 10:42:41.406   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.408  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 2099687 us, flags = 0x00000000
+01-12 10:42:41.408  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:41.410  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_60.yuv
+01-12 10:42:41.426  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:41.428  3419  3419 I @@@@    : read sample 66:0 @ 2233687 size 34575
+01-12 10:42:41.428  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 2233687 us
+01-12 10:42:41.429  3419  3419 D MainActivity: got frame, size 3133440/2066687/61/0
+01-12 10:42:41.444  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_61.yuv
+01-12 10:42:41.460  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:41.461  3419  3419 I @@@@    : read sample 67:0 @ 2266687 size 29374
+01-12 10:42:41.461  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 2266687 us
+01-12 10:42:41.461  3419  3419 D MainActivity: got frame, size 3133440/2099687/62/0
+01-12 10:42:41.466  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:41.470   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.471  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 2133687 us, flags = 0x00000000
+01-12 10:42:41.475   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.476  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 2166687 us, flags = 0x00000000
+01-12 10:42:41.476  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_62.yuv
+01-12 10:42:41.487  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:41.494  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:41.496  3419  3419 I @@@@    : read sample 68:0 @ 2399687 size 199657
+01-12 10:42:41.496  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 2399687 us
+01-12 10:42:41.497  3419  3419 D MainActivity: got frame, size 3133440/2133687/63/0
+01-12 10:42:41.511   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.511  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_63.yuv
+01-12 10:42:41.512  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 2199687 us, flags = 0x00000000
+01-12 10:42:41.513  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:41.529  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:41.530  3419  3419 I @@@@    : read sample 69:0 @ 2333687 size 35068
+01-12 10:42:41.531  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 2333687 us
+01-12 10:42:41.531  3419  3419 D MainActivity: got frame, size 3133440/2166687/64/0
+01-12 10:42:41.544  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_64.yuv
+01-12 10:42:41.561  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:41.563  3419  3419 I @@@@    : read sample 70:0 @ 2366687 size 29704
+01-12 10:42:41.564  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 2366687 us
+01-12 10:42:41.565  3419  3419 D MainActivity: got frame, size 3133440/2199687/65/0
+01-12 10:42:41.571  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:41.581   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.583  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 2233687 us, flags = 0x00000000
+01-12 10:42:41.585  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_65.yuv
+01-12 10:42:41.585   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.587  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 2266687 us, flags = 0x00000000
+01-12 10:42:41.592  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:41.601  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:41.604  3419  3419 I @@@@    : read sample 71:0 @ 2499687 size 209278
+01-12 10:42:41.605  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 2499687 us
+01-12 10:42:41.605  3419  3419 D MainActivity: got frame, size 3133440/2233687/66/0
+01-12 10:42:41.619  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_66.yuv
+01-12 10:42:41.619   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.621  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 2299687 us, flags = 0x00000000
+01-12 10:42:41.622  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:41.636  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:41.638  3419  3419 I @@@@    : read sample 72:0 @ 2433687 size 34331
+01-12 10:42:41.638  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 2433687 us
+01-12 10:42:41.638  3419  3419 D MainActivity: got frame, size 3133440/2266687/67/0
+01-12 10:42:41.654  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_67.yuv
+01-12 10:42:41.671  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:41.671  3419  3419 I @@@@    : read sample 73:0 @ 2466687 size 29487
+01-12 10:42:41.672  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 2466687 us
+01-12 10:42:41.672  3419  3419 D MainActivity: got frame, size 3133440/2299687/68/0
+01-12 10:42:41.684   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.685  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_68.yuv
+01-12 10:42:41.686  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 2333687 us, flags = 0x00000000
+01-12 10:42:41.688   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.693  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 2366687 us, flags = 0x00000000
+01-12 10:42:41.693  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:41.699  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:41.703  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:41.705  3419  3419 I @@@@    : read sample 74:0 @ 2633687 size 228245
+01-12 10:42:41.706  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 2633687 us
+01-12 10:42:41.706  3419  3419 D MainActivity: got frame, size 3133440/2333687/69/0
+01-12 10:42:41.717  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:41.719  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_69.yuv
+01-12 10:42:41.722   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.724  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 2399687 us, flags = 0x00000000
+01-12 10:42:41.736  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:41.738  3419  3419 I @@@@    : read sample 75:0 @ 2566687 size 48046
+01-12 10:42:41.739  3419  3419 D MainActivity: got frame, size 3133440/2366687/70/0
+01-12 10:42:41.739  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 2566687 us
+01-12 10:42:41.745   692  1318 D audio_hw_primary: out_standby: enter: stream (0xef4f8400) usecase(1: low-latency-playback)
+01-12 10:42:41.758  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_70.yuv
+01-12 10:42:41.775  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:41.776  3419  3419 I @@@@    : read sample 76:0 @ 2533687 size 27963
+01-12 10:42:41.776  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 2533687 us
+01-12 10:42:41.777  3419  3419 D MainActivity: got frame, size 3133440/2399687/71/0
+01-12 10:42:41.783  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:41.790   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.790  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_71.yuv
+01-12 10:42:41.792  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 2433687 us, flags = 0x00000000
+01-12 10:42:41.796   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.797  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 2466687 us, flags = 0x00000000
+01-12 10:42:41.804  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:41.807  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:41.808   692  1318 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback smartpa
+01-12 10:42:41.810   692  1318 D soundtrigger: audio_extn_sound_trigger_update_stream_status: uc_id 1 of type 0 for Event 2, with Raise=0
+01-12 10:42:41.810   692  1318 D hardware_info: hw_info_append_hw_type : device_name = speaker
+01-12 10:42:41.810   692  1318 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+01-12 10:42:41.810   692  1318 D msm8974_platform: platform_can_split_snd_device: snd_device(2) num devices(0) new_snd_devices(0)
+01-12 10:42:41.810   692  1318 D aud_dev_arbi: releaseOneDevice: not sending command, device argument (2) does not match any registered device
+01-12 10:42:41.810   692  1318 D aud_dev_arbi: releaseOneDevice: device 2 owner is 0
+01-12 10:42:41.810   692  1318 I soundtrigger: audio_extn_sound_trigger_update_device_status: device 0x2 of type 0 for Event 0, with Raise=0
+01-12 10:42:41.810   692  1318 D audio_hw_primary: out_standby: exit
+01-12 10:42:41.812  3419  3419 I @@@@    : read sample 77:0 @ 2599687 size 28180
+01-12 10:42:41.812  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 2599687 us
+01-12 10:42:41.812  3419  3419 D MainActivity: got frame, size 3133440/2433687/72/0
+01-12 10:42:41.828  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_72.yuv
+01-12 10:42:41.829  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:41.835   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.836  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 2499687 us, flags = 0x00000000
+01-12 10:42:41.842  3419  3426 W art     : Suspending all threads took: 6.035ms
+01-12 10:42:41.850  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:41.852  3419  3419 I @@@@    : read sample 78:0 @ 2733687 size 207930
+01-12 10:42:41.852  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 2733687 us
+01-12 10:42:41.852  3419  3419 D MainActivity: got frame, size 3133440/2466687/73/0
+01-12 10:42:41.863  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:41.866   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.867  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 2533687 us, flags = 0x00000000
+01-12 10:42:41.871  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_73.yuv
+01-12 10:42:41.888  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:41.889  3419  3419 I @@@@    : read sample 79:0 @ 2666687 size 37554
+01-12 10:42:41.889  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 2666687 us
+01-12 10:42:41.890  3419  3419 D MainActivity: got frame, size 3133440/2499687/74/0
+01-12 10:42:41.905  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_74.yuv
+01-12 10:42:41.922  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:41.924  3419  3419 I @@@@    : read sample 80:0 @ 2699687 size 30687
+01-12 10:42:41.925  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 2699687 us
+01-12 10:42:41.925  3419  3419 D MainActivity: got frame, size 3133440/2533687/75/0
+01-12 10:42:41.930  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:41.935   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.936  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 2566687 us, flags = 0x00000000
+01-12 10:42:41.939   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.940  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 2599687 us, flags = 0x00000000
+01-12 10:42:41.943  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_75.yuv
+01-12 10:42:41.950  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:41.960  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:41.961  3419  3419 I @@@@    : read sample 81:0 @ 2833687 size 214838
+01-12 10:42:41.962  3419  3419 D MainActivity: got frame, size 3133440/2566687/76/0
+01-12 10:42:41.962  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 2833687 us
+01-12 10:42:41.976  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_76.yuv
+01-12 10:42:41.980   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:41.981  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 2633687 us, flags = 0x00000000
+01-12 10:42:41.981  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:41.992  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:41.995  3419  3419 I @@@@    : read sample 82:0 @ 2766687 size 37332
+01-12 10:42:41.995  3419  3419 D MainActivity: got frame, size 3133440/2599687/77/0
+01-12 10:42:41.995  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 2766687 us
+01-12 10:42:42.009  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_77.yuv
+01-12 10:42:42.027  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:42.028  3419  3419 I @@@@    : read sample 83:0 @ 2799687 size 30417
+01-12 10:42:42.028  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 2799687 us
+01-12 10:42:42.028  3419  3419 D MainActivity: got frame, size 3133440/2633687/78/0
+01-12 10:42:42.037  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:42.041   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.043  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_78.yuv
+01-12 10:42:42.043  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 2666687 us, flags = 0x00000000
+01-12 10:42:42.044   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.046  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 2699687 us, flags = 0x00000000
+01-12 10:42:42.057  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:42.059  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:42.061  3419  3419 I @@@@    : read sample 84:0 @ 2933687 size 217160
+01-12 10:42:42.061  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 2933687 us
+01-12 10:42:42.061  3419  3419 D MainActivity: got frame, size 3133440/2666687/79/0
+01-12 10:42:42.075  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_79.yuv
+01-12 10:42:42.077   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.078  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 2733687 us, flags = 0x00000000
+01-12 10:42:42.078  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:42.092  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:42.095  3419  3419 I @@@@    : read sample 85:0 @ 2866687 size 36988
+01-12 10:42:42.095  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 2866687 us
+01-12 10:42:42.095  3419  3419 D MainActivity: got frame, size 3133440/2699687/80/0
+01-12 10:42:42.116  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_80.yuv
+01-12 10:42:42.134  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:42.136  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:42.137  3419  3419 I @@@@    : read sample 86:0 @ 2899687 size 32118
+01-12 10:42:42.137  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 2899687 us
+01-12 10:42:42.138  3419  3419 D MainActivity: got frame, size 3133440/2733687/81/0
+01-12 10:42:42.138   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.142  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 2766687 us, flags = 0x00000000
+01-12 10:42:42.143   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.144  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 2799687 us, flags = 0x00000000
+01-12 10:42:42.154  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_81.yuv
+01-12 10:42:42.159  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:42.173  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:42.175  3419  3419 I @@@@    : read sample 87:0 @ 3033687 size 219901
+01-12 10:42:42.176  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 3033687 us
+01-12 10:42:42.176  3419  3419 D MainActivity: got frame, size 3133440/2766687/82/0
+01-12 10:42:42.189   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.191  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_82.yuv
+01-12 10:42:42.192  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 2833687 us, flags = 0x00000000
+01-12 10:42:42.192  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:42.209  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:42.210  3419  3419 I @@@@    : read sample 88:0 @ 2966687 size 36952
+01-12 10:42:42.210  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 2966687 us
+01-12 10:42:42.210  3419  3419 D MainActivity: got frame, size 3133440/2799687/83/0
+01-12 10:42:42.226  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_83.yuv
+01-12 10:42:42.246  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:42.247  3419  3419 I @@@@    : read sample 89:0 @ 2999687 size 32405
+01-12 10:42:42.247  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 2999687 us
+01-12 10:42:42.247  3419  3419 D MainActivity: got frame, size 3133440/2833687/84/0
+01-12 10:42:42.254  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:42.258   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.260  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 2866687 us, flags = 0x00000000
+01-12 10:42:42.262   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.263  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 2899687 us, flags = 0x00000000
+01-12 10:42:42.263  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_84.yuv
+01-12 10:42:42.275  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:42.282  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:42.283  3419  3419 I @@@@    : read sample 90:0 @ 3133687 size 214864
+01-12 10:42:42.284  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 3133687 us
+01-12 10:42:42.284  3419  3419 D MainActivity: got frame, size 3133440/2866687/85/0
+01-12 10:42:42.300   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.301  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 2933687 us, flags = 0x00000000
+01-12 10:42:42.301  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:42.302  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_85.yuv
+01-12 10:42:42.320  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:42.321  3419  3419 I @@@@    : read sample 91:0 @ 3066687 size 36600
+01-12 10:42:42.321  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 3066687 us
+01-12 10:42:42.322  3419  3419 D MainActivity: got frame, size 3133440/2899687/86/0
+01-12 10:42:42.340  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_86.yuv
+01-12 10:42:42.358  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:42.359  3419  3419 I @@@@    : read sample 92:0 @ 3099687 size 31524
+01-12 10:42:42.360  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 3099687 us
+01-12 10:42:42.360  3419  3419 D MainActivity: got frame, size 3133440/2933687/87/0
+01-12 10:42:42.365  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:42.368   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.370  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 2966687 us, flags = 0x00000000
+01-12 10:42:42.373   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.375  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 2999687 us, flags = 0x00000000
+01-12 10:42:42.378  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_87.yuv
+01-12 10:42:42.385  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:42.397  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:42.401  3419  3419 I @@@@    : read sample 93:0 @ 3233687 size 218811
+01-12 10:42:42.401  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 3233687 us
+01-12 10:42:42.402  3419  3419 D MainActivity: got frame, size 3133440/2966687/88/0
+01-12 10:42:42.416   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.417  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_88.yuv
+01-12 10:42:42.418  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 3033687 us, flags = 0x00000000
+01-12 10:42:42.418  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:42.435  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:42.436  3419  3419 I @@@@    : read sample 94:0 @ 3166687 size 38732
+01-12 10:42:42.437  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 3166687 us
+01-12 10:42:42.437  3419  3419 D MainActivity: got frame, size 3133440/2999687/89/0
+01-12 10:42:42.452  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_89.yuv
+01-12 10:42:42.469  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:42.470  3419  3419 I @@@@    : read sample 95:0 @ 3199687 size 33582
+01-12 10:42:42.470  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 3199687 us
+01-12 10:42:42.470  3419  3419 D MainActivity: got frame, size 3133440/3033687/90/0
+01-12 10:42:42.482  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:42.485  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_90.yuv
+01-12 10:42:42.487   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.489  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 3066687 us, flags = 0x00000000
+01-12 10:42:42.492   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.494  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 3099687 us, flags = 0x00000000
+01-12 10:42:42.501  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:42.510  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:42.512  3419  3419 I @@@@    : read sample 96:0 @ 3366687 size 232902
+01-12 10:42:42.512  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 3366687 us
+01-12 10:42:42.512  3419  3419 D MainActivity: got frame, size 3133440/3066687/91/0
+01-12 10:42:42.523  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:42.527   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.528  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 3133687 us, flags = 0x00000000
+01-12 10:42:42.529  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_91.yuv
+01-12 10:42:42.546  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:42.547  3419  3419 I @@@@    : read sample 97:0 @ 3299687 size 52720
+01-12 10:42:42.548  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 3299687 us
+01-12 10:42:42.548  3419  3419 D MainActivity: got frame, size 3133440/3099687/92/0
+01-12 10:42:42.565  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_92.yuv
+01-12 10:42:42.578   636   653 E Sensors : sns_debug_main.c(160):Debug Timer Callback called
+01-12 10:42:42.582  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:42.582  3419  3419 I @@@@    : read sample 98:0 @ 3266687 size 35318
+01-12 10:42:42.583  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 3266687 us
+01-12 10:42:42.583  3419  3419 D MainActivity: got frame, size 3133440/3133687/93/0
+01-12 10:42:42.593  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:42.597   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.598  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_93.yuv
+01-12 10:42:42.599  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 3166687 us, flags = 0x00000000
+01-12 10:42:42.601   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.602  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 3199687 us, flags = 0x00000000
+01-12 10:42:42.614  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:42.617  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:42.618  3419  3419 I @@@@    : read sample 99:0 @ 3333687 size 32079
+01-12 10:42:42.618  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 3333687 us
+01-12 10:42:42.618  3419  3419 D MainActivity: got frame, size 3133440/3166687/94/0
+01-12 10:42:42.632  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_94.yuv
+01-12 10:42:42.642   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.644  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 3233687 us, flags = 0x00000000
+01-12 10:42:42.644  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:42.648  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:42.651  3419  3419 I @@@@    : read sample 100:0 @ 3499687 size 231627
+01-12 10:42:42.651  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 3499687 us
+01-12 10:42:42.651  3419  3419 D MainActivity: got frame, size 3133440/3199687/95/0
+01-12 10:42:42.665   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.666  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 3266687 us, flags = 0x00000000
+01-12 10:42:42.666  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:42.670  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_95.yuv
+01-12 10:42:42.686  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:42.687  3419  3419 I @@@@    : read sample 101:0 @ 3433687 size 51441
+01-12 10:42:42.687  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 3433687 us
+01-12 10:42:42.687  3419  3419 D MainActivity: got frame, size 3133440/3233687/96/0
+01-12 10:42:42.701  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_96.yuv
+01-12 10:42:42.717  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:42.718  3419  3419 I @@@@    : read sample 102:0 @ 3399687 size 31825
+01-12 10:42:42.718  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 3399687 us
+01-12 10:42:42.718  3419  3419 D MainActivity: got frame, size 3133440/3266687/97/0
+01-12 10:42:42.733  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:42.734  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_97.yuv
+01-12 10:42:42.738   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.739  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 3299687 us, flags = 0x00000000
+01-12 10:42:42.742   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.743  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 3333687 us, flags = 0x00000000
+01-12 10:42:42.753  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:42.753  3419  3419 I @@@@    : read sample 103:0 @ 3466687 size 30142
+01-12 10:42:42.754  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 3466687 us
+01-12 10:42:42.754  3419  3419 D MainActivity: got frame, size 3133440/3299687/98/0
+01-12 10:42:42.754  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:42.767  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_98.yuv
+01-12 10:42:42.776  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:42.778   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.779  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 3366687 us, flags = 0x00000000
+01-12 10:42:42.784  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:42.786  3419  3419 I @@@@    : read sample 104:0 @ 3633687 size 230173
+01-12 10:42:42.787  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 3633687 us
+01-12 10:42:42.787  3419  3419 D MainActivity: got frame, size 3133440/3333687/99/0
+01-12 10:42:42.800   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.801  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_99.yuv
+01-12 10:42:42.802  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 3399687 us, flags = 0x00000000
+01-12 10:42:42.802  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:42.818  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:42.819  3419  3419 I @@@@    : read sample 105:0 @ 3566687 size 50688
+01-12 10:42:42.819  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 3566687 us
+01-12 10:42:42.820  3419  3419 D MainActivity: got frame, size 3133440/3366687/100/0
+01-12 10:42:42.836  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_100.yuv
+01-12 10:42:42.852  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:42.853  3419  3419 I @@@@    : read sample 106:0 @ 3533687 size 30804
+01-12 10:42:42.853  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 3533687 us
+01-12 10:42:42.853  3419  3419 D MainActivity: got frame, size 3133440/3399687/101/0
+01-12 10:42:42.865  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:42.867  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_101.yuv
+01-12 10:42:42.868   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.869  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 3433687 us, flags = 0x00000000
+01-12 10:42:42.872   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.873  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 3466687 us, flags = 0x00000000
+01-12 10:42:42.884  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:42.885  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:42.886  3419  3419 I @@@@    : read sample 107:0 @ 3599687 size 30586
+01-12 10:42:42.886  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 3599687 us
+01-12 10:42:42.886  3419  3419 D MainActivity: got frame, size 3133440/3433687/102/0
+01-12 10:42:42.901  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_102.yuv
+01-12 10:42:42.906  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:42.911   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.912  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 3499687 us, flags = 0x00000000
+01-12 10:42:42.919  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:42.920  3419  3419 I @@@@    : read sample 108:0 @ 3766687 size 206164
+01-12 10:42:42.921  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 3766687 us
+01-12 10:42:42.921  3419  3419 D MainActivity: got frame, size 3133440/3466687/103/0
+01-12 10:42:42.932  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:42.934  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_103.yuv
+01-12 10:42:42.935   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:42.936  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 3533687 us, flags = 0x00000000
+01-12 10:42:42.951  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:42.952  3419  3419 I @@@@    : read sample 109:0 @ 3699687 size 49883
+01-12 10:42:42.952  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 3699687 us
+01-12 10:42:42.953  3419  3419 D MainActivity: got frame, size 3133440/3499687/104/0
+01-12 10:42:42.967  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_104.yuv
+01-12 10:42:42.983  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:42.985  3419  3419 I @@@@    : read sample 110:0 @ 3666687 size 30976
+01-12 10:42:42.986  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 3666687 us
+01-12 10:42:42.986  3419  3419 D MainActivity: got frame, size 3133440/3533687/105/0
+01-12 10:42:42.994  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:43.001   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.003  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 3566687 us, flags = 0x00000000
+01-12 10:42:43.003  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_105.yuv
+01-12 10:42:43.007   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.010  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 3599687 us, flags = 0x00000000
+01-12 10:42:43.014  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:43.021  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:43.022  3419  3419 I @@@@    : read sample 111:0 @ 3733687 size 30145
+01-12 10:42:43.022  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 3733687 us
+01-12 10:42:43.022  3419  3419 D MainActivity: got frame, size 3133440/3566687/106/0
+01-12 10:42:43.036  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_106.yuv
+01-12 10:42:43.047   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.049  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 3633687 us, flags = 0x00000000
+01-12 10:42:43.049  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:43.052  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:43.054  3419  3419 I @@@@    : read sample 112:0 @ 3866687 size 187368
+01-12 10:42:43.055  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 3866687 us
+01-12 10:42:43.055  3419  3419 D MainActivity: got frame, size 3133440/3599687/107/0
+01-12 10:42:43.071  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_107.yuv
+01-12 10:42:43.073  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:43.075   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.079  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 3666687 us, flags = 0x00000000
+01-12 10:42:43.091  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:43.095  3419  3419 I @@@@    : read sample 113:0 @ 3799687 size 35295
+01-12 10:42:43.095  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 3799687 us
+01-12 10:42:43.096  3419  3419 D MainActivity: got frame, size 3133440/3633687/108/0
+01-12 10:42:43.110  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_108.yuv
+01-12 10:42:43.126  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:43.127  3419  3419 I @@@@    : read sample 114:0 @ 3833687 size 29337
+01-12 10:42:43.128  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 3833687 us
+01-12 10:42:43.128  3419  3419 D MainActivity: got frame, size 3133440/3666687/109/0
+01-12 10:42:43.134   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.137  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 3699687 us, flags = 0x00000000
+01-12 10:42:43.138   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.140  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 3733687 us, flags = 0x00000000
+01-12 10:42:43.140  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:43.144  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_109.yuv
+01-12 10:42:43.149  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:43.161  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:43.163  3419  3419 I @@@@    : read sample 115:0 @ 3966687 size 189078
+01-12 10:42:43.163  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 3966687 us
+01-12 10:42:43.163  3419  3419 D MainActivity: got frame, size 3133440/3699687/110/0
+01-12 10:42:43.174  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:43.177   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.178  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 3766687 us, flags = 0x00000000
+01-12 10:42:43.181  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_110.yuv
+01-12 10:42:43.200  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:43.202  3419  3419 I @@@@    : read sample 116:0 @ 3899687 size 37052
+01-12 10:42:43.202  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 3899687 us
+01-12 10:42:43.202  3419  3419 D MainActivity: got frame, size 3133440/3733687/111/0
+01-12 10:42:43.217  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_111.yuv
+01-12 10:42:43.233  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:43.235  3419  3419 I @@@@    : read sample 117:0 @ 3933687 size 30152
+01-12 10:42:43.235  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 3933687 us
+01-12 10:42:43.235  3419  3419 D MainActivity: got frame, size 3133440/3766687/112/0
+01-12 10:42:43.244  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:43.248   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.249  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 3799687 us, flags = 0x00000000
+01-12 10:42:43.251  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_112.yuv
+01-12 10:42:43.252   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.253  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 3833687 us, flags = 0x00000000
+01-12 10:42:43.260  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:43.270  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:43.272  3419  3419 I @@@@    : read sample 118:0 @ 4066687 size 179120
+01-12 10:42:43.272  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 4066687 us
+01-12 10:42:43.273  3419  3419 D MainActivity: got frame, size 3133440/3799687/113/0
+01-12 10:42:43.283  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:43.286   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.287  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 3866687 us, flags = 0x00000000
+01-12 10:42:43.288  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_113.yuv
+01-12 10:42:43.305  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:43.306  3419  3419 I @@@@    : read sample 119:0 @ 3999687 size 37143
+01-12 10:42:43.306  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 3999687 us
+01-12 10:42:43.307  3419  3419 D MainActivity: got frame, size 3133440/3833687/114/0
+01-12 10:42:43.320  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_114.yuv
+01-12 10:42:43.337  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:43.338  3419  3419 I @@@@    : read sample 120:0 @ 4033687 size 30504
+01-12 10:42:43.338  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 4033687 us
+01-12 10:42:43.338  3419  3419 D MainActivity: got frame, size 3133440/3866687/115/0
+01-12 10:42:43.343  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:43.348   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.349  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 3899687 us, flags = 0x00000000
+01-12 10:42:43.352   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.354  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 3933687 us, flags = 0x00000000
+01-12 10:42:43.356  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_115.yuv
+01-12 10:42:43.364  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:43.372  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:43.374  3419  3419 I @@@@    : read sample 121:0 @ 4166687 size 169745
+01-12 10:42:43.374  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 4166687 us
+01-12 10:42:43.374  3419  3419 D MainActivity: got frame, size 3133440/3899687/116/0
+01-12 10:42:43.387  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_116.yuv
+01-12 10:42:43.389   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.390  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 3966687 us, flags = 0x00000000
+01-12 10:42:43.390  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:43.404  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:43.405  3419  3419 I @@@@    : read sample 122:0 @ 4099687 size 36122
+01-12 10:42:43.406  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 4099687 us
+01-12 10:42:43.406  3419  3419 D MainActivity: got frame, size 3133440/3933687/117/0
+01-12 10:42:43.421  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_117.yuv
+01-12 10:42:43.438  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:43.439  3419  3419 I @@@@    : read sample 123:0 @ 4133687 size 30815
+01-12 10:42:43.439  3419  3419 D MainActivity: got frame, size 3133440/3966687/118/0
+01-12 10:42:43.440  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 4133687 us
+01-12 10:42:43.440  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:43.446   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.447  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 3999687 us, flags = 0x00000000
+01-12 10:42:43.453   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.454  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 4033687 us, flags = 0x00000000
+01-12 10:42:43.455  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_118.yuv
+01-12 10:42:43.462  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:43.471  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:43.473  3419  3419 I @@@@    : read sample 124:0 @ 4266687 size 152420
+01-12 10:42:43.473  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 4266687 us
+01-12 10:42:43.474  3419  3419 D MainActivity: got frame, size 3133440/3999687/119/0
+01-12 10:42:43.488  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_119.yuv
+01-12 10:42:43.488   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.489  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 4066687 us, flags = 0x00000000
+01-12 10:42:43.489  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:43.506  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:43.508  3419  3419 I @@@@    : read sample 125:0 @ 4199687 size 36083
+01-12 10:42:43.509  3419  3419 D MainActivity: got frame, size 3133440/4033687/120/0
+01-12 10:42:43.509  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 4199687 us
+01-12 10:42:43.527  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_120.yuv
+01-12 10:42:43.541   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.544  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 4099687 us, flags = 0x00000000
+01-12 10:42:43.548  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:43.549   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.551  3419  3419 I @@@@    : read sample 126:0 @ 4233687 size 31487
+01-12 10:42:43.551  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 4133687 us, flags = 0x00000000
+01-12 10:42:43.551  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 4233687 us
+01-12 10:42:43.552  3419  3419 D MainActivity: got frame, size 3133440/4066687/121/0
+01-12 10:42:43.552  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:43.566  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_121.yuv
+01-12 10:42:43.571  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:43.582  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:43.586  3419  3419 I @@@@    : read sample 127:0 @ 4366687 size 318356
+01-12 10:42:43.586  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 4366687 us
+01-12 10:42:43.588  3419  3419 D MainActivity: got frame, size 3133440/4099687/122/0
+01-12 10:42:43.598  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:43.600   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.603  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 4166687 us, flags = 0x00000000
+01-12 10:42:43.604  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_122.yuv
+01-12 10:42:43.620  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:43.625  3419  3419 I @@@@    : read sample 128:0 @ 4299687 size 44916
+01-12 10:42:43.625  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 4299687 us
+01-12 10:42:43.626  3419  3419 D MainActivity: got frame, size 3133440/4133687/123/0
+01-12 10:42:43.649  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_123.yuv
+01-12 10:42:43.666  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:43.668   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.670  3419  3419 I @@@@    : read sample 129:0 @ 4333687 size 58210
+01-12 10:42:43.670  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 4199687 us, flags = 0x00000000
+01-12 10:42:43.670  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 4333687 us
+01-12 10:42:43.671  3419  3419 D MainActivity: got frame, size 3133440/4166687/124/0
+01-12 10:42:43.672   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.674  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 4233687 us, flags = 0x00000000
+01-12 10:42:43.674  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:43.688  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_124.yuv
+01-12 10:42:43.696  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:43.707  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:43.708  3419  3419 I @@@@    : read sample 130:0 @ 4499687 size 273347
+01-12 10:42:43.709  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 4499687 us
+01-12 10:42:43.709  3419  3419 D MainActivity: got frame, size 3133440/4199687/125/0
+01-12 10:42:43.719  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:43.726  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_125.yuv
+01-12 10:42:43.728   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.730  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 4266687 us, flags = 0x00000000
+01-12 10:42:43.744  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:43.745  3419  3419 I @@@@    : read sample 131:0 @ 4433687 size 106147
+01-12 10:42:43.746  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 4433687 us
+01-12 10:42:43.746  3419  3419 D MainActivity: got frame, size 3133440/4233687/126/0
+01-12 10:42:43.762  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_126.yuv
+01-12 10:42:43.782  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:43.784  3419  3419 I @@@@    : read sample 132:0 @ 4399687 size 63941
+01-12 10:42:43.784  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 4399687 us
+01-12 10:42:43.784  3419  3419 D MainActivity: got frame, size 3133440/4266687/127/0
+01-12 10:42:43.788  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:43.794   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.796  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 4299687 us, flags = 0x00000000
+01-12 10:42:43.798   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.799  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 4333687 us, flags = 0x00000000
+01-12 10:42:43.806  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_127.yuv
+01-12 10:42:43.813  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:43.827  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:43.828  3419  3419 I @@@@    : read sample 133:0 @ 4466687 size 47325
+01-12 10:42:43.828  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 4466687 us
+01-12 10:42:43.829  3419  3419 D MainActivity: got frame, size 3133440/4299687/128/0
+01-12 10:42:43.844  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_128.yuv
+01-12 10:42:43.856   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.857  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 4366687 us, flags = 0x00000000
+01-12 10:42:43.858  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:43.863  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:43.867  3419  3419 I @@@@    : read sample 134:0 @ 4633687 size 151831
+01-12 10:42:43.867  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 4633687 us
+01-12 10:42:43.869  3419  3419 D MainActivity: got frame, size 3133440/4333687/129/0
+01-12 10:42:43.883   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.884  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_129.yuv
+01-12 10:42:43.886  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 4399687 us, flags = 0x00000000
+01-12 10:42:43.886  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:43.902  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:43.903  3419  3419 I @@@@    : read sample 135:0 @ 4566687 size 57605
+01-12 10:42:43.904  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 4566687 us
+01-12 10:42:43.904  3419  3419 D MainActivity: got frame, size 3133440/4366687/130/0
+01-12 10:42:43.922  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_130.yuv
+01-12 10:42:43.938  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:43.939  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:43.940  3419  3419 I @@@@    : read sample 136:0 @ 4533687 size 47540
+01-12 10:42:43.940  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 4533687 us
+01-12 10:42:43.941  3419  3419 D MainActivity: got frame, size 3133440/4399687/131/0
+01-12 10:42:43.941   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.945  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 4433687 us, flags = 0x00000000
+01-12 10:42:43.945   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:43.947  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 4466687 us, flags = 0x00000000
+01-12 10:42:43.959  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_131.yuv
+01-12 10:42:43.970  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:43.979  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:43.980  3419  3419 I @@@@    : read sample 137:0 @ 4599687 size 38905
+01-12 10:42:43.980  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 4599687 us
+01-12 10:42:43.980  3419  3419 D MainActivity: got frame, size 3133440/4433687/132/0
+01-12 10:42:43.996  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_132.yuv
+01-12 10:42:44.009   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:44.012  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 4499687 us, flags = 0x00000000
+01-12 10:42:44.012  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:44.018  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:44.019  3419  3419 I @@@@    : read sample 138:0 @ 4733687 size 116174
+01-12 10:42:44.020  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 4733687 us
+01-12 10:42:44.020  3419  3419 D MainActivity: got frame, size 3133440/4466687/133/0
+01-12 10:42:44.035  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_133.yuv
+01-12 10:42:44.055  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:44.056   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:44.057  3419  3419 I @@@@    : read sample 139:0 @ 4666687 size 7671
+01-12 10:42:44.057  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 4666687 us
+01-12 10:42:44.058  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 4533687 us, flags = 0x00000000
+01-12 10:42:44.058  3419  3419 D MainActivity: got frame, size 3133440/4499687/134/0
+01-12 10:42:44.059  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:44.072  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_134.yuv
+01-12 10:42:44.089  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:44.090  3419  3419 I @@@@    : read sample 140:0 @ 4699687 size 4640
+01-12 10:42:44.091  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 4699687 us
+01-12 10:42:44.091  3419  3419 D MainActivity: got frame, size 3133440/4533687/135/0
+01-12 10:42:44.096   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:44.098  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 4566687 us, flags = 0x00000000
+01-12 10:42:44.102   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:44.103  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 4599687 us, flags = 0x00000000
+01-12 10:42:44.103  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:44.109  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_135.yuv
+01-12 10:42:44.124  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:44.126  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:44.127  3419  3419 I @@@@    : read sample 141:0 @ 4833687 size 59252
+01-12 10:42:44.128  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 4833687 us
+01-12 10:42:44.128  3419  3419 D MainActivity: got frame, size 3133440/4566687/136/0
+01-12 10:42:44.141  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_136.yuv
+01-12 10:42:44.148  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:44.151   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:44.153  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 4633687 us, flags = 0x00000000
+01-12 10:42:44.158  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:44.160  3419  3419 I @@@@    : read sample 142:0 @ 4766687 size 6593
+01-12 10:42:44.163  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 4766687 us
+01-12 10:42:44.164  3419  3419 D MainActivity: got frame, size 3133440/4599687/137/0
+01-12 10:42:44.182  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_137.yuv
+01-12 10:42:44.188   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:44.190  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 4666687 us, flags = 0x00000000
+01-12 10:42:44.191   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:44.193  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 4699687 us, flags = 0x00000000
+01-12 10:42:44.193  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:44.205  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:44.207  3419  3419 I @@@@    : read sample 143:0 @ 4799687 size 6444
+01-12 10:42:44.207  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 4799687 us
+01-12 10:42:44.208  3419  3419 D MainActivity: got frame, size 3133440/4633687/138/0
+01-12 10:42:44.222  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_138.yuv
+01-12 10:42:44.229  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:44.239  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:44.242  3419  3419 I @@@@    : read sample 144:0 @ 4933687 size 52072
+01-12 10:42:44.243  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 4933687 us
+01-12 10:42:44.244  3419  3419 D MainActivity: got frame, size 3133440/4666687/139/0
+01-12 10:42:44.261  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_139.yuv
+01-12 10:42:44.263  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:44.271   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:44.272  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 4733687 us, flags = 0x00000000
+01-12 10:42:44.282  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 24
+01-12 10:42:44.283  3419  3419 I @@@@    : read sample 145:0 @ 4866687 size 9312
+01-12 10:42:44.284  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 4866687 us
+01-12 10:42:44.284  3419  3419 D MainActivity: got frame, size 3133440/4699687/140/0
+01-12 10:42:44.300  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_140.yuv
+01-12 10:42:44.308   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:44.310  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 4766687 us, flags = 0x00000000
+01-12 10:42:44.313   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:44.314  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 4799687 us, flags = 0x00000000
+01-12 10:42:44.314  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:44.318  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:44.318  3419  3419 I @@@@    : read sample 146:0 @ 4899687 size 8553
+01-12 10:42:44.319  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ time 4899687 us
+01-12 10:42:44.320  3419  3419 D MainActivity: got frame, size 3133440/4733687/141/0
+01-12 10:42:44.333  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_141.yuv
+01-12 10:42:44.340  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:44.351  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 25
+01-12 10:42:44.352  3419  3419 I @@@@    : read sample 147:0 @ 5033687 size 31385
+01-12 10:42:44.352  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 2 w/ time 5033687 us
+01-12 10:42:44.355  3419  3419 D MainActivity: got frame, size 3133440/4766687/142/0
+01-12 10:42:44.370  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_142.yuv
+01-12 10:42:44.380   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:44.383  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 4833687 us, flags = 0x00000000
+01-12 10:42:44.383  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:44.391  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 23
+01-12 10:42:44.392  3419  3419 I @@@@    : read sample 148:0 @ 4966687 size 12665
+01-12 10:42:44.393  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 3 w/ time 4966687 us
+01-12 10:42:44.394  3419  3419 D MainActivity: got frame, size 3133440/4799687/143/0
+01-12 10:42:44.408  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_143.yuv
+01-12 10:42:44.418   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:44.422  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 4866687 us, flags = 0x00000000
+01-12 10:42:44.423   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:44.426  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 25 time 4899687 us, flags = 0x00000000
+01-12 10:42:44.426  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 28
+01-12 10:42:44.427  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 2
+01-12 10:42:44.428  3419  3419 I @@@@    : read sample 149:0 @ 4999687 size 11744
+01-12 10:42:44.429  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 4 w/ time 4999687 us
+01-12 10:42:44.431  3419  3419 D MainActivity: got frame, size 3133440/4833687/144/0
+01-12 10:42:44.444  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_144.yuv
+01-12 10:42:44.450  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 3
+01-12 10:42:44.464  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 26
+01-12 10:42:44.465  3419  3419 I @@@@    : read sample 150:-1 @ -1 size -1
+01-12 10:42:44.465  3419  3419 D MainActivity: saw input EOS.
+01-12 10:42:44.465  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling emptyBuffer 1 w/ EOS
+01-12 10:42:44.466  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] Signalled EOS (-1011) on the input port
+01-12 10:42:44.466  3419  3419 D MainActivity: got frame, size 3133440/4866687/145/0
+01-12 10:42:44.481  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_145.yuv
+01-12 10:42:44.491   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:44.493  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 24 time 4933687 us, flags = 0x00000000
+01-12 10:42:44.493  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 4
+01-12 10:42:44.499  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] calling fillBuffer 27
+01-12 10:42:44.499  3419  3419 D MainActivity: got frame, size 3133440/4899687/146/0
+01-12 10:42:44.505   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:44.509  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 28 time 4966687 us, flags = 0x00000000
+01-12 10:42:44.510   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:44.514  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 26 time 4999687 us, flags = 0x00000000
+01-12 10:42:44.515   701  3873 E C2DColorConvert: unknown format passed for luma alignment number
+01-12 10:42:44.516  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_146.yuv
+01-12 10:42:44.517  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 23 time 5033687 us, flags = 0x00000000
+01-12 10:42:44.517  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXFillBufferDone 27 time 0 us, flags = 0x00000001
+01-12 10:42:44.517  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] saw output EOS
+01-12 10:42:44.517  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] onOMXEmptyBufferDone 1
+01-12 10:42:44.534  3419  3419 D MainActivity: got frame, size 3133440/4933687/147/0
+01-12 10:42:44.548  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_147.yuv
+01-12 10:42:44.565  3419  3419 D MainActivity: got frame, size 3133440/4966687/148/0
+01-12 10:42:44.579  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_148.yuv
+01-12 10:42:44.596  3419  3419 D MainActivity: got frame, size 3133440/4999687/149/0
+01-12 10:42:44.610  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_149.yuv
+01-12 10:42:44.629  3419  3419 D MainActivity: got frame, size 3133440/5033687/150/0
+01-12 10:42:44.646  3419  3419 V MainActivity: output will be saved as /sdcard/Pictures/output_150.yuv
+01-12 10:42:44.664  3419  3419 D MainActivity: saw output EOS.
+01-12 10:42:44.665  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] Now Executing->Idle
+01-12 10:42:44.725  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] Now Idle->Loaded
+01-12 10:42:44.725  3419  3870 V ACodec  : [OMX.qcom.video.decoder.avc] Now Loaded
+01-12 10:42:44.727   701   701 I OMX-VDEC-1080P: omx_vdec::component_deinit() complete
+01-12 10:42:44.735   701   701 I OMX-VDEC-1080P: Exit OMX vdec Destructor: fd=9
+01-12 10:42:44.736   701   701 I OMX-VDEC-1080P: Video slvp perflock released
+01-12 10:42:44.737  3419  3870 V ACodec  : Now uninitialized
+01-12 10:42:44.776  3419  3419 I Choreographer: Skipped 374 frames!  The application may be doing too much work on its main thread.
