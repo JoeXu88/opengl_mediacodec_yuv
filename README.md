@@ -5,17 +5,17 @@ media codec simple decode project please refer to https://github.com/zhanghuicuc
 opengl render yuv please refer to http://blog.csdn.net/ueryueryuery/article/details/17608185
 
 
-opengl render vertex data=>
-[-1,1]                |                          [1,1]
-        c++++++++++++++++++++++++++d
-         +            |           +
-         +            |           +
-  -------------------------------------------
-         +            |           +
-         +            |           + 
-         +            |           +
-        a++++++++++++++++++++++++++b
-[-1,-1]               |                          [1,-1]
+opengl render vertex data:
+(-1,1)                                          (1,1)
+        c__________________________d
+         |            |           |
+         |            |           |
+  _____________________________________________
+         |            |           |
+         |            |           | 
+         |            |           |
+        a__________________________b
+(-1,-1)                                         (1,-1)
 
 
 We have four limited postion for full size window of 2D picture, so we should make vertex of our window inside the limited vertex data.
